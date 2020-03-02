@@ -22,7 +22,7 @@ import java.util.Collections;
 import java.util.List;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     private static final int MY_REQUEST_CODE = 7117; //any number
     List<AuthUI.IdpConfig> providers;
@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_sign_out = (Button)findViewById(R.id.btn_sign_out);
         btn_sign_out.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void OnClick(View v) {
+
+            public void onClick(View v) {
                 //logout
                 AuthUI.getInstance()
                         .signOut(MainActivity.this)
