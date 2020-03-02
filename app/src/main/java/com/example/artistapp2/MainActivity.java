@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_sign_out = (Button)findViewById(R.id.btn_sign_out);
         btn_sign_out.setOnClickListener(new View.OnClickListener() {
 
-            //@Override
+            @Override
             public void OnClick(View v) {
                 //logout
                 AuthUI.getInstance()
