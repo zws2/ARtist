@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ARtistapp2</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="title_activity_ar">ARActivity</string>
 </resources>
