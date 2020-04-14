@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "900771005523-093nippk9dl2fgffa1otssesa9nm7ji1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.artistapp2",
+            "certificate_hash": "5def98cf7abfea8f228810b96239d3363a92b1b6"
+          }
+        },
+        {
           "client_id": "900771005523-u52o1v05qglh7c6qpm7rm0is2c6ct6er.apps.googleusercontent.com",
           "client_type": 3
         }
