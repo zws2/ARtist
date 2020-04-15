@@ -12,8 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ARActivity"
-            android:label="@string/title_activity_ar"
+            android:name=".FriendActivity"
+            android:label="@string/title_activity_friend"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".InformationActivity"
