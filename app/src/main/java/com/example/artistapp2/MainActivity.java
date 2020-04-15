@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     List<AuthUI.IdpConfig> providers;
     Button btn_sign_out;
     Button btn_info;
+    public static FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,8 +71,6 @@ public class MainActivity extends AppCompatActivity {
                 new AuthUI. IdpConfig.PhoneBuilder().build(), //Phone
                 // new AuthUI. IdpConfig.FacebookBuilder().build(), //FB
                 new AuthUI. IdpConfig.GoogleBuilder().build() //Google
-
-
         );
 
         //showSignInOptions();
@@ -79,6 +78,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openInformationActivity(){
+
+        
+
         Intent intent = new Intent(this, InformationActivity.class);
         startActivity(intent);
     }
@@ -101,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             if(resultCode == RESULT_OK)
             {
                 //get user
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                user = FirebaseAuth.getInstance().getCurrentUser();
                 //show email on toast
                 Toast.makeText(  this, ""+user.getEmail(), Toast.LENGTH_SHORT).show();
                 //SET BUTTON SIGNOUT
