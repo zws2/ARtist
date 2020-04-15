@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import android.util.Log;
 import android.widget.Toast;
 import android.widget.Button;
 import com.firebase.ui.auth.AuthUI;
@@ -25,12 +26,16 @@ public class MainActivity extends AppCompatActivity {
     List<AuthUI.IdpConfig> providers;
     Button btn_sign_out;
     Button btn_info;
+    int test;
     public static FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        test = 1;
+        Log.d("Assert", "Hello?");
 
         btn_sign_out = findViewById(R.id.btn_sign_out);
         btn_sign_out.setOnClickListener(new View.OnClickListener() {
@@ -77,9 +82,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void saveView(View v){
+
+
+    }
+
     public void openInformationActivity(){
 
-        
+
 
         Intent intent = new Intent(this, InformationActivity.class);
         startActivity(intent);
